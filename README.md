@@ -15,11 +15,11 @@ This Python script allows you to perform Optical Character Recognition (OCR) on 
 - `filePath`: Path to the input PDF file. Modify this variable to point to your input PDF file.
 
 ## Output
-- Combined PDF: A new PDF file with searchable text generated from the OCR results.
-- Translated Text: A text file containing the extracted Arabic text for each page.
+- PDF File: A new PDF file with searchable text generated from the OCR results.
+- Text file: A text file containing the extracted Arabic text for each page.
 
 ## Usage
-1. Install the required libraries using the provided commands.
+1. Install the required libraries from `requirements.txt`.
 2. Modify the `filePath` variable to point to your input PDF file.
 3. Run the script, and the combined PDF and translated text will be saved in the same directory.
 
