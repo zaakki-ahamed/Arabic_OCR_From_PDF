@@ -9,13 +9,6 @@ Perform Optical Character Recognition (OCR) on a scanned PDF file containing Ara
 - PyPDF2==3.0.1
 - tesseract-ocr-ara==1.1.0
 - poppler-utils==21.11.0
-  
-## Note
-Before running the script, make sure to set the path to the Tesseract OCR command in the script. Locate the following line:
-
-`pytesseract.pytesseract.tesseract_cmd = r'/usr/bin/tesseract'`
-
-and modify the path according to the setup of your machine.
 
 ## Input / Output
 - Input : `filePath` variable points to your input PDF file.
@@ -24,7 +17,8 @@ and modify the path according to the setup of your machine.
 ## Usage
 1. Install the required libraries from `requirements.txt`.
 2. Modify the `filePath` variable to point to your input PDF file.
-3. Set the path to the Tesseract OCR command in the script if needed.
+3. Set the path to the Tesseract OCR command in the script if needed by modifying the line -
+`pytesseract.pytesseract.tesseract_cmd = r'/usr/bin/tesseract'`
 4. Run the script, and the combined PDF and translated text will be saved in the same directory.
 
 **Example:**
