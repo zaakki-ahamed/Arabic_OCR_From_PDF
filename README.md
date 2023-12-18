@@ -10,7 +10,7 @@ This Python script allows you to perform Optical Character Recognition (OCR) on 
 - PyPDF2==3.0.1
 - tesseract-ocr-ara==1.1.0
 - poppler-utils==21.11.0
-- 
+  
 ## Note
 Before running the script, make sure to set the path to the Tesseract OCR command in the script. Locate the following line:
 
