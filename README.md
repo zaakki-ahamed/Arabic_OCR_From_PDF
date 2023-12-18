@@ -1,6 +1,6 @@
 # Arabic PDF OCR - Searchable PDF
 
-This Python script allows you to perform Optical Character Recognition (OCR) on a scanned PDF file containing Arabic text. The script uses Tesseract OCR to extract text from each page, generates a searchable PDF, and also saves the OCR text as a separate text file. It is useful for digitizing Arabic text from PDFs and creating searchable documents.
+Perform Optical Character Recognition (OCR) on a scanned PDF file containing Arabic text. I use Tesseract OCR to extract text from each page, generate a searchable PDF, and save the OCR text as a separate text file. Can aid in digitizing Arabic text from PDFs and creating searchable documents.
 
 ## Requirements
 - pdf2image==1.16.3
@@ -17,12 +17,9 @@ Before running the script, make sure to set the path to the Tesseract OCR comman
 
 and modify the path according to the setup of your machine.
 
-## Input
-- `filePath`: Path to the input PDF file. Modify this variable to point to your input PDF file.
-
-## Output
-- PDF File: A new PDF file with searchable text generated from the OCR results.
-- Text file: A text file containing the extracted Arabic text for each page.
+## Input / Output
+- Input : `filePath` variable points to your input PDF file.
+- Output : A new PDF file with searchable text generated from the OCR results and a text file containing the extracted Arabic text for each page.
 
 ## Usage
 1. Install the required libraries from `requirements.txt`.
@@ -34,6 +31,9 @@ and modify the path according to the setup of your machine.
 ```python
 # Set the path to the input PDF file
 filePath = '/path/to/your/input.pdf'
+
+# Set the path to the Tesseract OCR command
+pytesseract.pytesseract.tesseract_cmd = '/path/to/your/tesseract'
 
 # Run the script
 python script.py
