@@ -13,6 +13,7 @@ This Python script allows you to perform Optical Character Recognition (OCR) on 
 - 
 ## Note
 Before running the script, make sure to set the path to the Tesseract OCR command in the script. Locate the following line:
+
 `pytesseract.pytesseract.tesseract_cmd = r'/usr/bin/tesseract'`
 and modify the path according to the setup of your machine.
 
