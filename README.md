@@ -10,6 +10,11 @@ This Python script allows you to perform Optical Character Recognition (OCR) on 
 - PyPDF2==3.0.1
 - tesseract-ocr-ara==1.1.0
 - poppler-utils==21.11.0
+- 
+## Note
+Before running the script, make sure to set the path to the Tesseract OCR command in the script. Locate the following line:
+`pytesseract.pytesseract.tesseract_cmd = r'/usr/bin/tesseract'`
+and modify the path according to the setup of your machine.
 
 ## Input
 - `filePath`: Path to the input PDF file. Modify this variable to point to your input PDF file.
@@ -21,7 +26,8 @@ This Python script allows you to perform Optical Character Recognition (OCR) on 
 ## Usage
 1. Install the required libraries from `requirements.txt`.
 2. Modify the `filePath` variable to point to your input PDF file.
-3. Run the script, and the combined PDF and translated text will be saved in the same directory.
+3. Set the path to the Tesseract OCR command in the script if needed.
+4. Run the script, and the combined PDF and translated text will be saved in the same directory.
 
 **Example:**
 ```python
